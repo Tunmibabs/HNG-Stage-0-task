@@ -3,103 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HNG Stage 0 - Profile Card</title>
+    <title>HNG Stage 1 - Profile Card</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <article data-testid="test-profile-card" class="profile-card">
-      <!-- Header Section -->
-      <header class="card-header">
-        <h1 class="user-name" data-testid="test-user-name">
-          Tunmise Babalola (HNG Intern)
-        </h1>
-        <p class="user-bio" data-testid="test-user-bio">
-          Aspiring software developer specializing in front-end accessibility
-          and modern JavaScript patterns. Very excited to contribute to the HNG
-          Internship and looking forward to meeting new people!
-        </p>
-      </header>
+    <div class="card-wrapper">
+      <!-- Navigation Bar  -->
+      <nav class="nav-bar" data-testid="page-navigation">
+        <a
+          href="index.html"
+          class="nav-link active"
+          data-testid="nav-home-button"
+          >Home (Profile)</a
+        >
+        <a
+          href="./contactUs.html"
+          class="nav-link"
+          data-testid="nav-contact-button"
+          >Contact Us</a
+        >
+        <a href="./about.html" class="nav-link" data-testid="nav-about-button"
+          >About Me</a
+        >
+      </nav>
 
-      <!-- Main Content Grid -->
-      <div class="card-main-content">
-        <!-- Avatar Section -->
-        <figure class="avatar-section">
-          <img
-            src="./assets/profile card.PNG"
-            alt="Tunmise's Profile Avatar"
-            data-testid="test-user-avatar"
-            class="user-avatar"
-          />
-          <figcaption class="avatar-caption">Profile Picture</figcaption>
-        </figure>
+      <article data-testid="test-profile-card" class="profile-card">
+        <!-- Header Section -->
+        <header class="card-header">
+          <h1 class="user-name" data-testid="test-user-name">
+            Tunmise Babalola (HNG Intern)
+          </h1>
+          <p class="user-bio" data-testid="test-user-bio">
+            Aspiring software developer specializing in front-end accessibility
+            and modern JavaScript patterns. Very excited to contribute to the
+            HNG Internship and looking forward to meeting new people!
+          </p>
+        </header>
 
-        <!-- Details Section -->
-        <main class="details-section">
-          <!-- Current Time in Milliseconds -->
-          <section class="time-section">
-            <h3 class="time-label">Current UTC Time (Milliseconds)</h3>
-            <span
-              data-testid="test-user-time"
-              id="current-time-display"
-              class="current-time"
-            >
-            </span>
+        <!-- Main Content Grid -->
+        <div class="card-main-content">
+          <!-- Avatar Section -->
+          <figure class="avatar-section">
+            <img
+              src="./assets/profile card.PNG"
+              alt="Tunmise's Profile Avatar"
+              data-testid="test-user-avatar"
+              class="user-avatar"
+            />
+            <figcaption class="avatar-caption">Profile Picture</figcaption>
+          </figure>
+
+          <!-- Details Section -->
+          <main class="details-section">
+            <!-- Current Time in Milliseconds -->
+            <section class="time-section">
+              <h3 class="time-label">Current UTC Time (Milliseconds)</h3>
+              <span
+                data-testid="test-user-time"
+                id="current-time-display"
+                class="current-time"
+              >
+              </span>
+            </section>
+
+            <!-- Social Links -->
+            <nav data-testid="test-user-social-links" class="social-nav">
+              <h3 class="social-title">Connect with Me</h3>
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="https://github.com/Tunmibabs"
+                    data-testid="test-user-social-github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                  >
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/tunmise-babalola-b707212b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    data-testid="test-user-social-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </main>
+        </div>
+
+        <!-- Hobbies and Dislikes Lists -->
+        <div class="lists-container">
+          <section>
+            <h3 class="list-title">Hobbies</h3>
+            <ul data-testid="test-user-hobbies" class="list-content">
+              <li>Learning new JavaScript frameworks</li>
+              <li>Raeding books and Watching series/Movies</li>
+              <li>Going to the gym</li>
+              <li>Playing online games, physical sports and brain teasers</li>
+            </ul>
           </section>
 
-          <!-- Social Links -->
-          <nav data-testid="test-user-social-links" class="social-nav">
-            <h3 class="social-title">Connect with Me</h3>
-            <ul class="social-list">
-              <li>
-                <a
-                  href="https://github.com/Tunmibabs"
-                  data-testid="test-user-social-github"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-link"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/tunmise-babalola-b707212b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                  data-testid="test-user-social-linkedin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-link"
-                >
-                  LinkedIn
-                </a>
-              </li>
+          <section>
+            <h3 class="list-title">Dislikes</h3>
+            <ul data-testid="test-user-dislikes" class="list-content">
+              <li>Bugs in codes</li>
+              <li>Unnecessarily long road trips</li>
+              <li>Not being able to understand a code base</li>
+              <li>Hot weather</li>
             </ul>
-          </nav>
-        </main>
-      </div>
-
-      <!-- Hobbies and Dislikes Lists -->
-      <div class="lists-container">
-        <section>
-          <h3 class="list-title">Hobbies</h3>
-          <ul data-testid="test-user-hobbies" class="list-content">
-            <li>Learning new JavaScript frameworks</li>
-            <li>Raeding books and Watching series/Movies</li>
-            <li>Going to the gym</li>
-            <li>Playing online games, physical sports and brain teasers</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3 class="list-title">Dislikes</h3>
-          <ul data-testid="test-user-dislikes" class="list-content">
-            <li>Bugs in codes</li>
-            <li>Unnecessarily long road trips</li>
-            <li>Not being able to understand a code base</li>
-            <li>Hot weather</li>
-          </ul>
-        </section>
-      </div>
-    </article>
+          </section>
+        </div>
+      </article>
+    </div>
 
     <script src="script.js"></script>
   </body>
